@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+body{
+    background: rgb(28, 216, 242);
+    background: linear-gradient(
+      90deg,
+      rgba(28, 216, 242, 1) 0%,
+      rgba(30, 132, 191, 1) 30%,
+      rgba(30, 122, 185, 1) 40%,
+      rgba(31, 108, 177, 1) 50%,
+      rgba(31, 101, 173, 1) 60%,
+      rgba(31, 96, 170, 1) 70%,
+      rgba(42, 213, 247, 1) 100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.form {
+  background-color: #9ddffe;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1rem 4rem;
+  margin: auto;
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+span {
+  display: block;
+  color: red;
+  margin: 3px 0px;
+  font-family: 'Kanit', sans-serif;
+}
+.form input,
+select,
+.gender {
+  font-size: 1.3rem;
+  padding: 8px;
+  outline: none;
+}
+label {
+  font-size: 20px;
+  font-family: 'Nunito', sans-serif;
+}
+input {
+  margin: 3px 0px;
+  font-family: 'Poppins', sans-serif;
+}
+select {
+  margin: 0px 0px 0px 3px;
+  padding: 5px;
+  width: 13rem;
+}
+input:focus {
+  outline: 2px solid rgb(85, 152, 194);
+}
+button {
+  font-size: 1.3rem;
+  padding: 5px;
+  color:rgb(17, 127, 236) ;
+
+  font-family: 'Prompt', sans-serif;
+}

@@ -1,0 +1,156 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "name": "john",
+      "email": "john@gmail.com",
+      "contact": "7895874589",
+      "gender": "Male",
+      "state": "Goa"
+    },
+    {
+      "name": "shiv",
+      "email": "shiv@gmail.com",
+      "contact": "4587458965",
+      "gender": "Female",
+      "state": "Gujrat",
+      "id": 2
+    },
+    {
+      "name": "dsg",
+      "email": "sghj@gmail.com",
+      "contact": "7878787878",
+      "gender": "",
+      "state": "Maharastra",
+      "id": 3
+    },
+    {
+      "name": "check",
+      "email": "chgeck@gmail.com",
+      "contact": "7878787878",
+      "gender": "Male",
+      "state": "Goa",
+      "id": 4
+    },
+    {
+      "name": "ssss",
+      "email": "ssss@gmail.com",
+      "contact": "7878787878",
+      "gender": "Female",
+      "state": "Maharastra",
+      "id": 5
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Male",
+      "state": "0",
+      "id": 6
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Female",
+      "state": "0",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Female",
+      "state": "0",
+      "id": 8
+    },
+    {
+      "name": "f",
+      "email": "",
+      "contact": "",
+      "gender": "Female",
+      "state": "0",
+      "id": 9
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Male",
+      "state": "0",
+      "id": 10
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Female",
+      "state": "0",
+      "id": 11
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Male",
+      "state": "0",
+      "id": 12
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Female",
+      "state": "0",
+      "id": 13
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Female",
+      "state": "0",
+      "id": 14
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Female",
+      "state": "0",
+      "id": 15
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Female",
+      "state": "0",
+      "id": 16
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Female",
+      "state": "0",
+      "id": 17
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Female",
+      "state": "0",
+      "id": 18
+    },
+    {
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "Male",
+      "state": "0",
+      "id": 19
+    }
+  ]
+}
