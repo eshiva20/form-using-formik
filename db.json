@@ -1,156 +1,40 @@
 {
   "posts": [
     {
-      "id": 1,
-      "name": "john",
-      "email": "john@gmail.com",
-      "contact": "7895874589",
+      "name": "check",
+      "email": "check@gamil.com",
+      "contact": "4125478541",
       "gender": "Male",
-      "state": "Goa"
-    },
-    {
-      "name": "shiv",
-      "email": "shiv@gmail.com",
-      "contact": "4587458965",
-      "gender": "Female",
-      "state": "Gujrat",
-      "id": 2
-    },
-    {
-      "name": "dsg",
-      "email": "sghj@gmail.com",
-      "contact": "7878787878",
-      "gender": "",
-      "state": "Maharastra",
+      "state": "Goa",
+      "age": "less than 20Age",
       "id": 3
     },
     {
-      "name": "check",
-      "email": "chgeck@gmail.com",
-      "contact": "7878787878",
-      "gender": "Male",
-      "state": "Goa",
+      "name": "qqqqq",
+      "email": "qqqqqqq@gmail.com",
+      "contact": "1111111111",
+      "gender": "Female",
+      "state": "Delhi",
+      "age": "greater than 20Age",
       "id": 4
     },
     {
-      "name": "ssss",
-      "email": "ssss@gmail.com",
-      "contact": "7878787878",
-      "gender": "Female",
+      "name": "test",
+      "email": "test@gmail.com",
+      "contact": "7897897897",
+      "gender": "Male",
       "state": "Maharastra",
+      "age": "less than 20Age",
       "id": 5
     },
     {
-      "name": "",
-      "email": "",
-      "contact": "",
+      "name": "anit",
+      "email": "anit@gmail.com",
+      "contact": "7897897844",
       "gender": "Male",
-      "state": "0",
+      "state": "Orissa",
+      "age": "less than 20Age",
       "id": 6
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Female",
-      "state": "0",
-      "id": 7
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Female",
-      "state": "0",
-      "id": 8
-    },
-    {
-      "name": "f",
-      "email": "",
-      "contact": "",
-      "gender": "Female",
-      "state": "0",
-      "id": 9
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Male",
-      "state": "0",
-      "id": 10
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Female",
-      "state": "0",
-      "id": 11
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Male",
-      "state": "0",
-      "id": 12
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Female",
-      "state": "0",
-      "id": 13
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Female",
-      "state": "0",
-      "id": 14
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Female",
-      "state": "0",
-      "id": 15
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Female",
-      "state": "0",
-      "id": 16
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Female",
-      "state": "0",
-      "id": 17
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Female",
-      "state": "0",
-      "id": 18
-    },
-    {
-      "name": "",
-      "email": "",
-      "contact": "",
-      "gender": "Male",
-      "state": "0",
-      "id": 19
     }
   ]
 }
