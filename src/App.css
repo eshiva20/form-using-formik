@@ -92,11 +92,23 @@ input:focus {
 
 /* ------------- UserTable ---------------------- */
 
-.usertable{
+.usertable {
   margin: 2rem 0rem;
+  text-align: center;
 }
 
-.details-title{
+.add-user {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  padding: 4px 20px;
+  border-radius: 9px;
+  color: rgb(11 98 183);
+  font-family: "Prompt", sans-serif;
+}
+
+.details-title {
   text-align: center;
   font-family: "Prompt", sans-serif;
   color: white;

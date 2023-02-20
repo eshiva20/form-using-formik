@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./App.css";
 import { styled } from "@mui/material/styles";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -29,22 +30,36 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-const UserTable = ({ data }) => {
+const UserTable = ({
+  setUserId,
+  data,
+  getData,
+  setEditMode,
+  setUserInput,
+  userinput,
+  setAddMode,
+  addMode,
+  editMode,
+}) => {
   const handleDelete = (id) => {
     console.log("handledelete clicked", id);
     axios
       .delete(`http://localhost:8080/posts/${id}`)
-      .then(() => console.log("delete"))
+      .then(() => getData())
       .catch((err) => console.log("err", err));
   };
 
-  const handleUpdate = () => {
-    console.log("handleUpdate clicked");
+  const handleUpdate = (name) => {
+    setEditMode(!editMode);
+    let singleUser = data.find((elem) => elem.name === name);
+    console.log("singleUser", singleUser);
+    setUserInput({ ...singleUser });
   };
+  console.log("userinput in userTable", userinput);
 
   return (
     <div className="usertable">
-      <h1 className="details-title">User Details</h1>
+      <h1 className="details-title">Registered User Details</h1>
 
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">
@@ -75,13 +90,16 @@ const UserTable = ({ data }) => {
                   <button onClick={() => handleDelete(row.id)}>Delete</button>
                 </StyledTableCell>
                 <StyledTableCell align="right">
-                  <button onClick={() => handleUpdate(row.id)}>Update</button>
+                  <button onClick={() => handleUpdate(row.name)}>Update</button>
                 </StyledTableCell>
               </StyledTableRow>
             ))}
           </TableBody>
         </Table>
       </TableContainer>
+      <button className="add-user" onClick={() => setAddMode(!addMode)}>
+        Add user
+      </button>
     </div>
   );
 };

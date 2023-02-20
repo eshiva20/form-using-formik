@@ -1,33 +1,6 @@
 {
   "posts": [
     {
-      "name": "check",
-      "email": "check@gamil.com",
-      "contact": "4125478541",
-      "gender": "Male",
-      "state": "Goa",
-      "age": "less than 20Age",
-      "id": 3
-    },
-    {
-      "name": "qqqqq",
-      "email": "qqqqqqq@gmail.com",
-      "contact": "1111111111",
-      "gender": "Female",
-      "state": "Delhi",
-      "age": "greater than 20Age",
-      "id": 4
-    },
-    {
-      "name": "test",
-      "email": "test@gmail.com",
-      "contact": "7897897897",
-      "gender": "Male",
-      "state": "Maharastra",
-      "age": "less than 20Age",
-      "id": 5
-    },
-    {
       "name": "anit",
       "email": "anit@gmail.com",
       "contact": "7897897844",
@@ -35,6 +8,24 @@
       "state": "Orissa",
       "age": "less than 20Age",
       "id": 6
+    },
+    {
+      "name": "pranil",
+      "email": "pranil@gmail.com",
+      "contact": "1111111111",
+      "gender": "Male",
+      "state": "Goa",
+      "age": "greater than 20Age",
+      "id": 8
+    },
+    {
+      "name": "shiva",
+      "email": "shiva@gmail.com",
+      "contact": "7897897897",
+      "gender": "Male",
+      "state": "Maharastra",
+      "age": "greater than 20Age",
+      "id": 9
     }
   ]
 }
