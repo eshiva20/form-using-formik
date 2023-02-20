@@ -65,6 +65,22 @@ const Formik = ({ editMode, setUserInput ,userinput ,getData}) => {
       .catch((err) => console.log("postErr", err));
   };
 
+  const handleUpdate = async () => {
+    await axios
+      .put("http://localhost:8080/posts", userinput)
+      .then(() => {
+        alert("User UpDated");
+        getData();
+        formik.values.contact = "";
+        formik.values.name = "";
+        formik.values.email = "";
+        formik.values.gender = "";
+        formik.values.state = "0";
+        formik.values.age = "";
+      })
+      .catch((err) => console.log("postErr", err));
+  };
+
   if (!editMode && Object.values(userinput).length !== 0) {
     handleAdd();
     setUserInput({});
