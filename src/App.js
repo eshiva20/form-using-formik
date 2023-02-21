@@ -10,6 +10,7 @@ const App = () => {
   const [userinput, setUserInput] = useState({});
   const [editMode, setEditMode] = useState(false);
   const [addMode, setAddMode] = useState(false);
+  const[userId,setUserId]=useState()
 
   const getData = () => {
     axios
@@ -30,6 +31,8 @@ const App = () => {
           getData={getData}
           userinput={userinput}
           editMode={editMode}
+          userId={userId}
+          setEditMode={setEditMode}
         />
       ) : null}
 
@@ -42,6 +45,7 @@ const App = () => {
         data={data}
         setAddMode={setAddMode}
         addMode={addMode}
+        setUserId={setUserId}
       />
     </div>
   );

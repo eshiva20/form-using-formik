@@ -52,7 +52,7 @@ const UserTable = ({
   const handleUpdate = (name) => {
     setEditMode(!editMode);
     let singleUser = data.find((elem) => elem.name === name);
-    console.log("singleUser", singleUser);
+    setUserId(singleUser.id)
     setUserInput({ ...singleUser });
   };
   console.log("userinput in userTable", userinput);

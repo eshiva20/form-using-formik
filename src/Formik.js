@@ -1,9 +1,9 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import axios from 'axios';
+import axios from "axios";
 
-const Formik = ({ editMode, setUserInput ,userinput ,getData}) => {
+const Formik = ({ editMode, setUserInput, userinput, getData, userId ,setEditMode}) => {
   const emailregex =
     /^([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)@([0-9a-zA-Z]([-_\\.]*[0-9a-zA-Z]+)*)[\\.]([a-zA-Z]{2,9})$/;
   const contactRegex = /^(\+\d{1,3}[- ]?)?\d{10}$/;
@@ -18,7 +18,7 @@ const Formik = ({ editMode, setUserInput ,userinput ,getData}) => {
   };
 
   const formik = useFormik({
-    initialValues:Object.keys(userinput).length===0?userSchema:userinput,
+    initialValues: Object.keys(userinput).length === 0 ? userSchema : userinput,
     validationSchema: Yup.object({
       name: Yup.string()
         .min(3, "min 3 char required")
@@ -47,7 +47,7 @@ const Formik = ({ editMode, setUserInput ,userinput ,getData}) => {
     },
   });
 
-  console.log("initialValues in formik",formik.values)
+  console.log("initialValues in formik", formik.values);
 
   const handleAdd = async () => {
     await axios
@@ -67,26 +67,29 @@ const Formik = ({ editMode, setUserInput ,userinput ,getData}) => {
 
   const handleUpdate = async () => {
     await axios
-      .put("http://localhost:8080/posts", userinput)
+      .put(`http://localhost:8080/posts/${userId}`, userinput)
       .then(() => {
-        alert("User UpDated");
         getData();
-        formik.values.contact = "";
-        formik.values.name = "";
-        formik.values.email = "";
-        formik.values.gender = "";
-        formik.values.state = "0";
-        formik.values.age = "";
+        // setEditMode(false)
+        // formik.values.contact = "";
+        // formik.values.name = "";
+        // formik.values.email = "";
+        // formik.values.gender = "";
+        // formik.values.state = "0";
+        // formik.values.age = "";
       })
       .catch((err) => console.log("postErr", err));
   };
 
-  if (!editMode && Object.values(userinput).length !== 0) {
-    handleAdd();
-    setUserInput({});
+  if (Object.values(userinput).length !== 0) {
+    if (!userId) {
+      handleAdd();
+      setUserInput({});
+    } else {
+      handleUpdate();
+      setUserInput({});
+    }
   }
-
-  
 
   return (
     <div>
