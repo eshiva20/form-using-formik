@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./App.css";
-import { styled } from "@mui/material/styles";
+import {styled } from "@mui/material/styles";
+import { makeStyles } from "@material-ui/core";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell, { tableCellClasses } from "@mui/material/TableCell";
@@ -19,6 +20,17 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
     fontSize: 14,
   },
 }));
+
+const useStyles=makeStyles({
+  deleteButton:{
+    color:"blue"
+  },
+  title:{
+    color:"white",
+    textAlign: "center",
+    fontFamily: "Prompt, sans-serif",
+  }
+})
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(odd)": {
@@ -41,6 +53,8 @@ const UserTable = ({
   addMode,
   editMode,
 }) => {
+
+  const classes=useStyles()
   const handleDelete = (id) => {
     console.log("handledelete clicked", id);
     axios
@@ -59,7 +73,9 @@ const UserTable = ({
 
   return (
     <div className="usertable">
-      <h1 className="details-title">Registered User Details</h1>
+      <h1 className={classes.title} 
+      // className="details-title"
+      >Registered User Details</h1>
 
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 700 }} aria-label="customized table">
@@ -87,7 +103,7 @@ const UserTable = ({
                 <StyledTableCell align="centre">{row.state}</StyledTableCell>
                 <StyledTableCell align="centre">{row.age}</StyledTableCell>
                 <StyledTableCell align="centre">
-                  <button onClick={() => handleDelete(row.id)}>Delete</button>
+                  <button  onClick={() => handleDelete(row.id)}>Delete</button>
                 </StyledTableCell>
                 <StyledTableCell align="right">
                   <button onClick={() => handleUpdate(row.name)}>Update</button>
