@@ -1,12 +1,12 @@
 {
   "posts": [
     {
-      "name": "anita",
-      "email": "anit@gmail.com",
-      "contact": "7897897844",
+      "name": "new",
+      "email": "new@gmail.com",
+      "contact": "7977748546",
       "gender": "Male",
-      "state": "Orissa",
-      "age": "less than 20Age",
+      "state": "Maharastra",
+      "age": "greater than 20Age",
       "id": 6
     },
     {
@@ -26,6 +26,51 @@
       "state": "Maharastra",
       "age": "greater than 20Age",
       "id": 9
+    },
+    {
+      "name": "sdw",
+      "email": "dc@gmail.com",
+      "contact": "7458477412",
+      "gender": "Male",
+      "state": "Gujrat",
+      "age": "greater than 20Age",
+      "id": 10
+    },
+    {
+      "name": "check",
+      "email": "check@gmaul.in",
+      "contact": "7414741474",
+      "gender": "Male",
+      "state": "Maharastra",
+      "age": "greater than 20Age",
+      "id": 11
+    },
+    {
+      "name": "qqq",
+      "email": "qaa@gmail.com",
+      "contact": "1231231231",
+      "gender": "N/A",
+      "state": "Goa",
+      "age": "less than 20Age",
+      "id": 12
+    },
+    {
+      "name": "dsa",
+      "email": "sadsa@gmail.cm",
+      "contact": "asdas",
+      "gender": "N/A",
+      "state": "",
+      "age": "",
+      "id": 13
+    },
+    {
+      "name": "sdsad",
+      "email": "asds@gmail.com",
+      "contact": "7777777777",
+      "gender": "N/A",
+      "state": "",
+      "age": "",
+      "id": 14
     }
   ]
 }
