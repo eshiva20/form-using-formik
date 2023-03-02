@@ -10,8 +10,8 @@
       "id": 6
     },
     {
-      "name": "pranali",
-      "email": "pranali@gmail.com",
+      "name": "pranil",
+      "email": "pranil@gmail.com",
       "contact": "1111111000",
       "gender": "Male",
       "state": "Goa",
@@ -19,58 +19,13 @@
       "id": 8
     },
     {
-      "name": "shiva",
-      "email": "shiva@gmail.com",
-      "contact": "7897897897",
-      "gender": "Male",
-      "state": "Maharastra",
-      "age": "greater than 20Age",
+      "name": "",
+      "email": "",
+      "contact": "",
+      "gender": "N/A",
+      "state": "",
+      "age": "",
       "id": 9
-    },
-    {
-      "name": "sdw",
-      "email": "dc@gmail.com",
-      "contact": "7458477412",
-      "gender": "Male",
-      "state": "Gujrat",
-      "age": "greater than 20Age",
-      "id": 10
-    },
-    {
-      "name": "check",
-      "email": "check@gmaul.in",
-      "contact": "7414741474",
-      "gender": "Male",
-      "state": "Maharastra",
-      "age": "greater than 20Age",
-      "id": 11
-    },
-    {
-      "name": "qqq",
-      "email": "qaa@gmail.com",
-      "contact": "1231231231",
-      "gender": "N/A",
-      "state": "Goa",
-      "age": "less than 20Age",
-      "id": 12
-    },
-    {
-      "name": "dsa",
-      "email": "sadsa@gmail.cm",
-      "contact": "asdas",
-      "gender": "N/A",
-      "state": "",
-      "age": "",
-      "id": 13
-    },
-    {
-      "name": "sdsad",
-      "email": "asds@gmail.com",
-      "contact": "7777777777",
-      "gender": "N/A",
-      "state": "",
-      "age": "",
-      "id": 14
     }
   ]
 }

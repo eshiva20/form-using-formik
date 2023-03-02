@@ -1,7 +1,8 @@
 import React from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage, FieldArray } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import TextError from "./TextError";
 
 const UserForm = ({
   editMode,
@@ -22,25 +23,30 @@ const UserForm = ({
     gender: "N/A",
     state: "",
     age: "",
+    social: {
+      facebook: "",
+      instagram: "",
+    },
+    hobbies: ["", ""],
   };
 
   let validationSchema = Yup.object().shape({
-    name: Yup.string()
-      .min(3, "min 3 char required")
-      .max(10, "max 10 chars allowed")
-      .required("Name Required"),
-    email: Yup.string()
-      .matches(emailregex, "Enter valid mail id")
-      .required("Please enter your email"),
-    contact: Yup.string()
-      .matches(contactRegex, "Enter Correct Contact number ")
-      .required("Contact Required"),
+    // name: Yup.string()
+    //   .min(3, "min 3 char required")
+    //   .max(10, "max 10 chars allowed")
+    //   .required("Name Required"),
+    // email: Yup.string()
+    //   .matches(emailregex, "Enter valid mail id")
+    //   .required("Please enter your email"),
+    // contact: Yup.string()
+    //   .matches(contactRegex, "Enter Correct Contact number ")
+    //   .required("Contact Required"),
     // state: Yup.string().min(3).required("Select State"),
     // age: Yup.string().required("age is required !"),
   });
 
   let onSubmit = (values, { setFieldValues }) => {
-    console.log("onsubmit called")
+    console.log("form submission", values);
     setUserInput({
       name: values.name,
       email: values.email,
@@ -86,6 +92,7 @@ const UserForm = ({
       setUserInput({});
     }
   }
+  console.log('formik----values')
 
   return (
     <Formik
@@ -105,7 +112,7 @@ const UserForm = ({
               name="name"
               placeholder="Enter Username "
             />
-            <ErrorMessage name="name" />
+            <ErrorMessage component={TextError} name="name" />
           </div>
 
           <div>
@@ -116,7 +123,11 @@ const UserForm = ({
               name="email"
               placeholder="Enter Email id "
             />
-            <ErrorMessage name="email" />
+            <ErrorMessage name="email">
+              {(errMessage) => (
+                <div style={{ color: "orange" }}>{errMessage}</div>
+              )}
+            </ErrorMessage>
           </div>
         </div>
 
@@ -129,7 +140,7 @@ const UserForm = ({
               name="contact"
               placeholder="Enter contact "
             />
-            <ErrorMessage name="contact" />
+            <ErrorMessage component={TextError} name="contact" />
           </div>
 
           {/* <div className="radio-container">
@@ -192,6 +203,49 @@ const UserForm = ({
           </div>
           <ErrorMessage name="age" />
         </div> */}
+
+        <div className="row">
+          <div>
+            <label>faceBook Profile :</label>
+            <Field
+              autoComplete="off"
+              type="text"
+              name="social.facebook"
+              placeholder="Enter facebook profile "
+            />
+          </div>
+          <div>
+            <label>Instagram Profile :</label>
+            <Field
+              autoComplete="off"
+              type="text"
+              name="social.instagram"
+              placeholder="Enter Instagram profile "
+            />
+          </div>
+        </div>
+
+        <div className="row">
+          <div>
+            <label>Hobbie :</label>
+            <Field
+              autoComplete="off"
+              type="text"
+              name="hobbies[0]"
+              placeholder="Hobbie"
+            />
+          </div>
+          <div>
+            <label>Hobbie :</label>
+            <Field
+              autoComplete="off"
+              type="text"
+              name="hobbies[1]"
+              placeholder="Hobbie "
+            />
+          </div>
+        </div>
+
 
         {editMode ? (
           <button type="submit" className="submit">

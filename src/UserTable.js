@@ -56,7 +56,7 @@ const UserTable = ({
 
   const classes=useStyles()
   const handleDelete = (id) => {
-    console.log("handledelete clicked", id);
+    // console.log("handledelete clicked", id);
     axios
       .delete(`http://localhost:8080/posts/${id}`)
       .then(() => getData())
@@ -69,7 +69,7 @@ const UserTable = ({
     setUserId(singleUser.id)
     setUserInput({ ...singleUser });
   };
-  console.log("userinput in userTable", userinput);
+  // console.log("userinput in userTable", userinput);
 
   return (
     <div className="usertable">
